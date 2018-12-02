@@ -8,4 +8,5 @@ SOURCES += \
 
 HEADERS += \
     graph15_1.h \
-    graph15_3.h
+    graph15_3.h \
+    graph15_4.h

@@ -1,19 +1,57 @@
 #include <iostream>
 #include "graph15_1.h"
 #include "graph15_3.h"
+#include "graph15_4.h"
 
 using namespace std;
 
-void test_graph15_1();
-void test_graph15_3();
+void test_graph15_1();//Simple graph test
+void test_graph15_3();//Inherits simple_graph and has edge labels
+void test_graph15_4();//Checks if path exists between two vertices
 
 int main()
 {
+
+    test_graph15_4();
+
     test_graph15_3();
 
     test_graph15_1();
 
     return 0;
+}
+
+void test_graph15_4(){
+    graph<string> g;
+    g.add_vertex("v1");
+    g.add_vertex("v2");
+    g.add_vertex("v3");
+    g.add_vertex("v4");
+    g.add_vertex("v5");
+    g.add_vertex("v6");
+    //reflexivity
+    g.add_edge(0, 0);
+    g.add_edge(1, 1);
+    g.add_edge(2, 2);
+    g.add_edge(3, 3);
+    g.add_edge(4, 4);
+    g.add_edge(5, 5);
+    //add a path
+    g.add_edge(0,2);
+    g.add_edge(1, 0);
+    g.add_edge(1, 4);
+    g.add_edge(2, 0);
+    g.add_edge(2, 1);
+    g.add_edge(3, 4);
+    g.add_edge(3, 5);
+    g.add_edge(4, 3);
+    g.add_edge(5, 2);
+    g.add_edge(5, 1);
+
+    g.print();
+    cout << (g.exists_path(0, 5) ? "There is a path!" : "There is not a path :(");
+    cout << endl;
+    cout << endl;
 }
 
 void test_graph15_3(){
