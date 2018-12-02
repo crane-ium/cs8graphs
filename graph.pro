@@ -9,7 +9,8 @@ SOURCES += \
 HEADERS += \
     graph15_1.h \
     graph15_3.h \
-    graph15_4.h
+    graph15_4.h \
+    graph_weighted.h
 
 DISTFILES += \
     work_report.txt \

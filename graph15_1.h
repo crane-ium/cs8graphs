@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <vector>
 #include <iostream>
+#include <cassert>
 
 
 /**
@@ -96,10 +97,8 @@ T& simple_graph<T>::operator [](std::size_t index){
     if(index < __vertices)
         return __items[index];
     else{
-        T empty = T();
-        return empty;
+        assert(false);
     }
-
 }
 template<class T>
 bool simple_graph<T>::resize(std::size_t new_size){

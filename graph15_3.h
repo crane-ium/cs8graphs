@@ -101,8 +101,7 @@ T& graph_edge_labels<T>::get_edge(std::size_t v1, std::size_t v2){
     if(v1 < this->__vertices && v2 < this->__vertices){
         return __edges[v1][v2];
     }else{
-        T empty = T();
-        return empty;
+        assert(false);
     }
 
 }
