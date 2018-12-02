@@ -1,0 +1,19 @@
+1 0 1 0 0 0
+1 1 0 0 1 0
+1 1 1 0 0 0
+0 0 0 1 1 1
+0 0 0 1 1 0
+0 1 1 0 0 1
+There is a path!
+
+Vertices: v1, v2, v3, v4
+Edge at (1, 2): e1
+0 0 0 0
+0 0 1 0
+0 0 0 0
+0 0 1 0
+
+0 0 0
+0 0 1
+0 1 0
+Press <RETURN> to close this window...
