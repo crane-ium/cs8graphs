@@ -7,4 +7,5 @@ SOURCES += \
         main.cpp
 
 HEADERS += \
-    graph.h
+    graph15_1.h \
+    graph15_3.h
